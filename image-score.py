@@ -43,7 +43,6 @@ if __name__=="__main__":
 
 
         for (roots , dires , file) in os.walk(dire):
-            print(roots)
             for f in file:
                 if '.jpg' in f or '.png' in f:
 
@@ -52,10 +51,9 @@ if __name__=="__main__":
         imageScore.sort(key = sortFunc,reverse=True)            
         
         rows = len(imageScore)//4
-        print('rows:',rows)
-        print(len(imageScore))
         fig = plt.figure(figsize=(10, 7))
-
+        if rows > 5:
+            rows = 5
         for i in range(0,rows):
             print(i)
             for j in range(4):
