@@ -1,2 +1,2 @@
-# image-search-by-similarity
+# content-based image recovery
 image search by similarity
